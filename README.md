@@ -2,4 +2,6 @@
 
 **May 4, 2023**
 
-This is one I forgot to publish. This is a Material 2, Net 7 version of the original NavigationGraph6.  
+This is one I forgot to publish. This is a Material 2, Net 7 version of the original NavigationGraph6. 
+
+See NavigationGraph7Net7 for a more advanced Material 3 version.
