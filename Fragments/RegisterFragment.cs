@@ -37,12 +37,8 @@ namespace com.companyname.navigationgraph6net7.Fragments
             View? view = inflater.Inflate(Resource.Layout.fragment_register, container, false);
             TextView? textView = view!.FindViewById<TextView>(Resource.Id.text_register);
             textView!.Text = "This is the Register fragment";
-            
-            // New with release of Xamarin.AndroidX.Navigation.Fragment 2.5.1
-            //IMenuHost menuHost = RequireActivity();
-            //menuHost.AddMenuProvider(this, ViewLifecycleOwner, AndroidX.Lifecycle.Lifecycle.State.Resumed);
 
-            // More concise than the above 
+            // New with release of Xamarin.AndroidX.Navigation.Fragment 2.5.1 or more accurately AndroidX.Core.View
             (RequireActivity() as IMenuHost).AddMenuProvider(this, ViewLifecycleOwner, AndroidX.Lifecycle.Lifecycle.State.Resumed!);
             return view;
         }
